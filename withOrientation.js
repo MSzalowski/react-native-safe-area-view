@@ -22,7 +22,7 @@ export const isOrientationLandscape = ({
   height,
 }: WindowDimensions): boolean => width > height;
 
-export default function<T: {}>(
+export default function <T: {}>(
   WrappedComponent: React.ComponentType<T & InjectedProps>
 ) {
   class withOrientation extends React.Component<T, State> {
